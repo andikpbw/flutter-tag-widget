@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 205" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgCl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="420" height="205" rx="18" fill="url(#bgCl)" stroke="#334155" stroke-width="1.5"/>
+  <text x="20" y="27" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="700" fill="#F8FAFC">Weighted Interactive Tag Cloud</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(22, 48)">
+    <rect x="0" y="4" width="96" height="32" rx="16" fill="#090D16" stroke="#A855F7" stroke-width="1.4"/>
+    <text x="48" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#D8B4FE" text-anchor="middle">Dart 3 • 84</text>
+
+    <g transform="translate(106, 0)">
+      <rect x="0" y="0" width="168" height="40" rx="20" fill="#0D1526" stroke="#F43F5E" stroke-width="1.8">
+        <animate attributeName="stroke" values="#F43F5E;#F59E0B;#F43F5E" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="84" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="900" fill="#FDA4AF" text-anchor="middle">★ Humanize AI 98</text>
+    </g>
+
+    <rect x="284" y="7" width="88" height="26" rx="13" fill="#090D16" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="328" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#7DD3FC" text-anchor="middle">Neon • 50</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(22, 102)">
+    <rect x="10" y="0" width="138" height="36" rx="18" fill="#090D16" stroke="#00F5D4" stroke-width="1.6"/>
+    <text x="79" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#00F5D4" text-anchor="middle">✓ Flutter 3 • 92</text>
+
+    <rect x="158" y="2" width="124" height="32" rx="16" fill="#090D16" stroke="#F59E0B" stroke-width="1.4"/>
+    <text x="220" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#FDE047" text-anchor="middle">Tag Input • 78</text>
+
+    <rect x="292" y="4" width="76" height="28" rx="14" fill="#090D16" stroke="#6366F1" stroke-width="1.2"/>
+    <text x="330" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#A5B4FC" text-anchor="middle">M3 • 65</text>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(22, 150)">
+    <rect x="34" y="0" width="134" height="28" rx="14" fill="#090D16" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="101" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#BAE6FD" text-anchor="middle">Glassmorphism 58</text>
+
+    <rect x="178" y="0" width="144" height="28" rx="14" fill="#090D16" stroke="#EC4899" stroke-width="1.3"/>
+    <text x="250" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#F9A8D4" text-anchor="middle">CustomPainter 70</text>
+  </g>
+</svg>

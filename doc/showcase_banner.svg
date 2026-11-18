@@ -1,0 +1,346 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#0F172A" stop-opacity="0.94"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#00F5D4"/>
+    </linearGradient>
+
+    <linearGradient id="priceTagGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F43F5E"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366F1" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.12"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Main Background -->
+  <rect width="920" height="560" rx="22" fill="url(#bgGrad)"/>
+  <rect x="1" y="1" width="918" height="558" rx="21" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Header Bar -->
+  <g transform="translate(32, 22)">
+    <rect x="0" y="0" width="40" height="40" rx="11" fill="url(#accentGrad)"/>
+    <path d="M 10,20 L 18,12 L 30,12 L 30,28 L 18,28 Z" fill="#0F172A"/>
+    <circle cx="17" cy="20" r="2.2" fill="#00F5D4"/>
+    <text x="54" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="19" font-weight="800" fill="#F8FAFC">tag_widget</text>
+    <text x="54" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#94A3B8">Interactive Tag Input • Price-Tag &amp; Ticket Shapes • Filter Groups • Weighted Tag Cloud</text>
+
+    <!-- Theme Badges -->
+    <g transform="translate(565, 8)">
+      <rect x="0" y="0" width="60" height="24" rx="12" fill="#6366F1" fill-opacity="0.2" stroke="#6366F1" stroke-width="1"/>
+      <text x="30" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#818CF8" text-anchor="middle">Modern</text>
+
+      <rect x="66" y="0" width="54" height="24" rx="12" fill="#8B5CF6" fill-opacity="0.2" stroke="#8B5CF6" stroke-width="1"/>
+      <text x="93" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#C4B5FD" text-anchor="middle">Glass</text>
+
+      <rect x="126" y="0" width="54" height="24" rx="12" fill="#00F5D4" fill-opacity="0.15" stroke="#00F5D4" stroke-width="1"/>
+      <text x="153" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#00F5D4" text-anchor="middle">Neon</text>
+
+      <rect x="186" y="0" width="96" height="24" rx="12" fill="#9C27B0" fill-opacity="0.28" stroke="#CE93D8" stroke-width="1"/>
+      <text x="234" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#F3E5F5" text-anchor="middle">Humanize AI</text>
+    </g>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- CARD 1 (TOP-LEFT): INTERACTIVE TAG INPUT & LIVE AUTOCOMPLETE            -->
+  <!-- ======================================================================= -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="76" width="418" height="220" rx="18" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+  </g>
+  <circle cx="52" cy="100" r="5" fill="#38BDF8"/>
+  <text x="66" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#F8FAFC">1. Interactive Tag Input &amp; Autocomplete</text>
+  <text x="428" y="104" font-family="monospace" font-size="10.5" fill="#38BDF8" text-anchor="end">TagInputWidget</text>
+
+  <!-- Tag Input Field Box -->
+  <rect x="48" y="118" width="382" height="94" rx="14" fill="#0B1120" stroke="#6366F1" stroke-width="1.6">
+    <animate attributeName="stroke" values="#6366F1;#38BDF8;#6366F1" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Row 1 inside input box: #flutter, #dart, #humanize-ai PRO -->
+  <g transform="translate(60, 130)">
+    <!-- Tag 1: #flutter -->
+    <rect x="0" y="0" width="88" height="28" rx="14" fill="#38BDF8" fill-opacity="0.18" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="36" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#E0F2FE" text-anchor="middle">#flutter</text>
+    <circle cx="74" cy="14" r="7" fill="#38BDF8" fill-opacity="0.25"/>
+    <text x="74" y="17.5" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#E0F2FE" text-anchor="middle">×</text>
+
+    <!-- Tag 2: #dart -->
+    <rect x="96" y="0" width="74" height="28" rx="14" fill="#6366F1" fill-opacity="0.22" stroke="#818CF8" stroke-width="1.2"/>
+    <text x="125" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#E0E7FF" text-anchor="middle">#dart</text>
+    <circle cx="156" cy="14" r="7" fill="#818CF8" fill-opacity="0.25"/>
+    <text x="156" y="17.5" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#E0E7FF" text-anchor="middle">×</text>
+
+    <!-- Tag 3: #humanize-ai PRO -->
+    <rect x="178" y="0" width="152" height="28" rx="14" fill="#A855F7" fill-opacity="0.22" stroke="#C084FC" stroke-width="1.2"/>
+    <text x="228" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#F3E8FF" text-anchor="middle">#humanize-ai</text>
+    <rect x="274" y="6" width="32" height="16" rx="8" fill="#A855F7"/>
+    <text x="290" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle">PRO</text>
+    <circle cx="317" cy="14" r="7" fill="#C084FC" fill-opacity="0.25"/>
+    <text x="317" y="17.5" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#F3E8FF" text-anchor="middle">×</text>
+  </g>
+
+  <!-- Row 2 inside input box: Animated newly created tag #material3 OR live typing text -->
+  <g transform="translate(60, 168)">
+    <!-- Newly converted tag pill (visible from t=0.45 to 0.90) -->
+    <g>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.42;0.48;0.88;0.95" dur="6s" repeatCount="indefinite"/>
+      <rect x="0" y="0" width="102" height="28" rx="14" fill="#10B981" fill-opacity="0.22" stroke="#34D399" stroke-width="1.3"/>
+      <text x="42" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#D1FAE5" text-anchor="middle">#material3</text>
+      <circle cx="88" cy="14" r="7" fill="#34D399" fill-opacity="0.25"/>
+      <text x="88" y="17.5" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#D1FAE5" text-anchor="middle">×</text>
+    </g>
+
+    <!-- Typing text before conversion (visible from t=0 to 0.42) -->
+    <g>
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.40;0.46;0.92;1" dur="6s" repeatCount="indefinite"/>
+      <text x="4" y="19" font-family="monospace" font-size="12.5" font-weight="600" fill="#94A3B8">#material3,</text>
+      <rect x="88" y="6" width="2" height="16" fill="#38BDF8">
+        <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Live Counter Badge on bottom-right of input box -->
+    <rect x="308" y="2" width="48" height="22" rx="11" fill="#6366F1" fill-opacity="0.2"/>
+    <text x="332" y="17" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#818CF8" text-anchor="middle">4 / 8</text>
+  </g>
+
+  <!-- Autocomplete Suggestions Row below input box -->
+  <g transform="translate(48, 224)">
+    <text x="0" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#64748B">Suggestions:</text>
+
+    <g transform="translate(72, 0)">
+      <rect x="0" y="0" width="76" height="24" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="38" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#CBD5E1" text-anchor="middle">+ #pubdev</text>
+
+      <rect x="84" y="0" width="84" height="24" rx="12" fill="#1E293B" stroke="#38BDF8" stroke-width="1">
+        <animate attributeName="fill" values="#1E293B;#0284C7;#1E293B" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <text x="126" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#E0F2FE" text-anchor="middle">+ #material3</text>
+
+      <rect x="176" y="0" width="96" height="24" rx="12" fill="#1E293B" stroke="#475569" stroke-width="1"/>
+      <text x="224" y="16" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#CBD5E1" text-anchor="middle">+ #opensource</text>
+    </g>
+    <text x="0" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Split by comma/Enter, paste lists, Backspace-to-delete &amp; live suggestions</text>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- CARD 2 (TOP-RIGHT): CUSTOM SILHOUETTES & 6 THEME PRESETS                -->
+  <!-- ======================================================================= -->
+  <g filter="url(#cardShadow)">
+    <rect x="472" y="76" width="418" height="220" rx="18" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+  </g>
+  <circle cx="494" cy="100" r="5" fill="#F43F5E"/>
+  <text x="508" y="104" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#F8FAFC">2. Price-Tag, Ticket, Ribbon &amp; 6 Themes</text>
+  <text x="870" y="104" font-family="monospace" font-size="10.5" fill="#FB7185" text-anchor="end">TagShape &amp; TagStyle</text>
+
+  <!-- Row 1: PriceTag Shape & Ticket Shape -->
+  <g transform="translate(492, 124)">
+    <!-- Physical Price-Tag Shape (Left pointer + punch hole + gradient) -->
+    <g>
+      <path d="M 0,18 L 16,0 L 178,0 A 8,8 0 0,1 186,8 L 186,28 A 8,8 0 0,1 178,36 L 16,36 Z"
+            fill="url(#priceTagGrad)" stroke="#FDA4AF" stroke-width="1.3"/>
+      <circle cx="17" cy="18" r="3.8" fill="#0F172A" stroke="#FDA4AF" stroke-width="1.2"/>
+      <text x="78" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">Flash Sale • $29</text>
+      <rect x="136" y="8" width="40" height="20" rx="10" fill="#000000" fill-opacity="0.28"/>
+      <text x="156" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FEF08A" text-anchor="middle">-40%</text>
+    </g>
+
+    <!-- Perforated Ticket Shape (Neon Cyber) -->
+    <g transform="translate(200, 0)">
+      <path d="M 8,0 L 168,0 A 8,8 0 0,1 176,8 L 176,12 A 6,6 0 0,0 176,24 L 176,28 A 8,8 0 0,1 168,36 L 8,36 A 8,8 0 0,1 0,28 L 0,24 A 6,6 0 0,0 0,12 L 0,8 A 8,8 0 0,1 8,0 Z"
+            fill="#090D16" stroke="#00F5D4" stroke-width="1.6" filter="url(#neonGlow)">
+        <animate attributeName="stroke-opacity" values="1;0.55;1" dur="3s" repeatCount="indefinite"/>
+      </path>
+      <text x="88" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#00F5D4" text-anchor="middle">★ VIP Pass 2026</text>
+    </g>
+  </g>
+
+  <!-- Row 2: Ribbon Shape & Glass Avatar Pill -->
+  <g transform="translate(492, 174)">
+    <!-- Bookmark Ribbon Shape -->
+    <g>
+      <path d="M 8,0 L 172,0 L 160,18 L 172,36 L 8,36 A 8,8 0 0,1 0,28 L 0,8 A 8,8 0 0,1 8,0 Z"
+            fill="url(#purpleGrad)" stroke="#F5D0FE" stroke-width="1.2"/>
+      <text x="78" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle">✦ Featured Story</text>
+    </g>
+
+    <!-- Frosted Glass Pill with Circular Avatar & Count Badge -->
+    <g transform="translate(186, 0)">
+      <rect x="0" y="0" width="190" height="36" rx="18" fill="url(#glassGrad)" stroke="#818CF8" stroke-width="1.4"/>
+      <circle cx="20" cy="18" r="11" fill="#6366F1"/>
+      <text x="20" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="10" font-weight="800" fill="#FFFFFF" text-anchor="middle">AI</text>
+      <text x="88" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#F8FAFC" text-anchor="middle">Glassmorphic</text>
+      <rect x="144" y="8" width="34" height="20" rx="10" fill="#6366F1" fill-opacity="0.45"/>
+      <text x="161" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">99+</text>
+    </g>
+  </g>
+
+  <!-- Row 3: Outlined, Modern Selected, and Soft Tactile Pills -->
+  <g transform="translate(492, 224)">
+    <rect x="0" y="0" width="114" height="32" rx="16" fill="none" stroke="#4ADE80" stroke-width="1.5"/>
+    <text x="57" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#4ADE80" text-anchor="middle">✓ Outlined</text>
+
+    <rect x="124" y="0" width="122" height="32" rx="10" fill="#6366F1" stroke="#818CF8" stroke-width="1.2">
+      <animate attributeName="fill" values="#6366F1;#4F46E5;#6366F1" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="185" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓ Modern M3</text>
+
+    <rect x="256" y="0" width="120" height="32" rx="10" fill="#E2E8F0" stroke="#FFFFFF" stroke-width="1.2"/>
+    <text x="316" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#1E293B" text-anchor="middle">Soft Tactile 12</text>
+
+    <text x="0" y="54" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">6 silhouettes (pill, rounded, square, priceTag, ticket, ribbon) &amp; 6 styles</text>
+  </g>
+
+  <!-- ======================================================================= -->
+  <!-- CARD 3 (BOTTOM-LEFT): FILTER TAG GROUP WITH "+N MORE" OVERFLOW          -->
+  <!-- ======================================================================= -->
+  <g filter="url(#cardShadow)">
+    <rect x="30" y="314" width="418" height="218" rx="18" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+  </g>
+  <circle cx="52" cy="338" r="5" fill="#A855F7"/>
+  <text x="66" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#F8FAFC">3. Filter Tag Group &amp; Overflow</text>
+  <text x="428" y="342" font-family="monospace" font-size="10.5" fill="#C084FC" text-anchor="end">TagGroupWidget</text>
+
+  <!-- Filter Row 1 -->
+  <g transform="translate(48, 364)">
+    <!-- Master "All 7" Chip -->
+    <rect x="0" y="0" width="76" height="34" rx="17" fill="#6366F1" fill-opacity="0.16" stroke="#6366F1" stroke-width="1.3"/>
+    <text x="26" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#E2E8F0" text-anchor="middle">All</text>
+    <rect x="44" y="7" width="24" height="20" rx="10" fill="#6366F1" fill-opacity="0.35"/>
+    <text x="56" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#C7D2FE" text-anchor="middle">7</text>
+
+    <!-- Selected Filter 1: ✓ Mobile UI 42 -->
+    <rect x="86" y="0" width="136" height="34" rx="17" fill="#6366F1" stroke="#818CF8" stroke-width="1.4"/>
+    <text x="138" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓ Mobile UI</text>
+    <rect x="188" y="7" width="26" height="20" rx="10" fill="#FFFFFF" fill-opacity="0.22"/>
+    <text x="201" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">42</text>
+
+    <!-- Animated Toggling Filter 2: ✓ AI & LLM 128 -->
+    <g>
+      <rect x="232" y="0" width="144" height="34" rx="17" fill="#8B5CF6" stroke="#C084FC" stroke-width="1.4">
+        <animate attributeName="fill-opacity" values="1;1;0.18;0.18;1" keyTimes="0;0.45;0.52;0.88;0.95" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <text x="284" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">✓ AI &amp; LLM</text>
+      <rect x="336" y="7" width="32" height="20" rx="10" fill="#FFFFFF" fill-opacity="0.22"/>
+      <text x="352" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">128</text>
+    </g>
+  </g>
+
+  <!-- Filter Row 2 -->
+  <g transform="translate(48, 408)">
+    <!-- Unselected Filter 3: Design System 35 -->
+    <rect x="0" y="0" width="146" height="34" rx="17" fill="#1E293B" stroke="#475569" stroke-width="1.2"/>
+    <text x="56" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">Design System</text>
+    <rect x="112" y="7" width="26" height="20" rx="10" fill="#334155"/>
+    <text x="125" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#94A3B8" text-anchor="middle">35</text>
+
+    <!-- Unselected Filter 4: Open Source 89 -->
+    <rect x="156" y="0" width="134" height="34" rx="17" fill="#1E293B" stroke="#475569" stroke-width="1.2"/>
+    <text x="208" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#CBD5E1" text-anchor="middle">Open Source</text>
+    <rect x="256" y="7" width="26" height="20" rx="10" fill="#334155"/>
+    <text x="269" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="10.5" font-weight="700" fill="#94A3B8" text-anchor="middle">89</text>
+
+    <!-- Collapsible Overflow Chip: "+3 more" -->
+    <rect x="300" y="0" width="80" height="34" rx="17" fill="#6366F1" fill-opacity="0.18" stroke="#818CF8" stroke-dasharray="3,2" stroke-width="1.4">
+      <animate attributeName="fill-opacity" values="0.18;0.42;0.18" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="340" y="21" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="800" fill="#A5B4FC" text-anchor="middle">+3 more</text>
+  </g>
+
+  <!-- Filter Row 3 (Animated Expanded Overflow Chips) -->
+  <g transform="translate(48, 452)">
+    <animate attributeName="opacity" values="0.35;1;1;0.35" keyTimes="0;0.3;0.8;1" dur="6s" repeatCount="indefinite"/>
+    <rect x="0" y="0" width="128" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-opacity="0.6" stroke-width="1.2"/>
+    <text x="64" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#BAE6FD" text-anchor="middle">WebAssembly 19</text>
+
+    <rect x="136" y="0" width="118" height="30" rx="15" fill="#1E293B" stroke="#38BDF8" stroke-opacity="0.6" stroke-width="1.2"/>
+    <text x="195" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#BAE6FD" text-anchor="middle">Animations 64</text>
+
+    <rect x="262" y="0" width="96" height="30" rx="15" fill="#334155" stroke="#94A3B8" stroke-width="1"/>
+    <text x="310" y="19" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="700" fill="#E2E8F0" text-anchor="middle">▴ Show less</text>
+  </g>
+  <text x="48" y="512" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Single/multi selection, master "All" toggle, and collapsible "+N more" chip</text>
+
+  <!-- ======================================================================= -->
+  <!-- CARD 4 (BOTTOM-RIGHT): WEIGHTED INTERACTIVE TAG CLOUD                   -->
+  <!-- ======================================================================= -->
+  <g filter="url(#cardShadow)">
+    <rect x="472" y="314" width="418" height="218" rx="18" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.2"/>
+  </g>
+  <circle cx="494" cy="338" r="5" fill="#00F5D4"/>
+  <text x="508" y="342" font-family="system-ui, -apple-system, sans-serif" font-size="13.5" font-weight="700" fill="#F8FAFC">4. Weighted Interactive Tag Cloud</text>
+  <text x="870" y="342" font-family="monospace" font-size="10.5" fill="#00F5D4" text-anchor="end">TagCloudWidget</text>
+
+  <!-- Cloud Row 1 -->
+  <g transform="translate(494, 364)">
+    <!-- Medium Weight: Dart 3 (84) -->
+    <rect x="0" y="4" width="96" height="32" rx="16" fill="#090D16" stroke="#A855F7" stroke-width="1.4"/>
+    <text x="48" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#D8B4FE" text-anchor="middle">Dart 3 • 84</text>
+
+    <!-- Highest Weight Hero Tag: Humanize AI (98) -->
+    <g transform="translate(106, 0)">
+      <rect x="0" y="0" width="168" height="40" rx="20" fill="#0D1526" stroke="#F43F5E" stroke-width="1.8" filter="url(#neonGlow)">
+        <animate attributeName="stroke" values="#F43F5E;#F59E0B;#F43F5E" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="84" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="15" font-weight="900" fill="#FDA4AF" text-anchor="middle">★ Humanize AI 98</text>
+    </g>
+
+    <!-- Small Weight: Neon (50) -->
+    <rect x="284" y="7" width="88" height="26" rx="13" fill="#090D16" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="328" y="24" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#7DD3FC" text-anchor="middle">Neon • 50</text>
+  </g>
+
+  <!-- Cloud Row 2 -->
+  <g transform="translate(494, 414)">
+    <!-- High Weight: Flutter 3 (92) -->
+    <rect x="10" y="0" width="138" height="36" rx="18" fill="#090D16" stroke="#00F5D4" stroke-width="1.6" filter="url(#neonGlow)"/>
+    <text x="79" y="23" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="800" fill="#00F5D4" text-anchor="middle">✓ Flutter 3 • 92</text>
+
+    <!-- Medium-High Weight: Tag Input (78) -->
+    <rect x="158" y="2" width="124" height="32" rx="16" fill="#090D16" stroke="#F59E0B" stroke-width="1.4"/>
+    <text x="220" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#FDE047" text-anchor="middle">Tag Input • 78</text>
+
+    <!-- Small-Medium Weight: M3 (65) -->
+    <rect x="292" y="4" width="76" height="28" rx="14" fill="#090D16" stroke="#6366F1" stroke-width="1.2"/>
+    <text x="330" y="22" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#A5B4FC" text-anchor="middle">M3 • 65</text>
+  </g>
+
+  <!-- Cloud Row 3 -->
+  <g transform="translate(494, 458)">
+    <rect x="34" y="0" width="134" height="28" rx="14" fill="#090D16" stroke="#38BDF8" stroke-width="1.2"/>
+    <text x="101" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="600" fill="#BAE6FD" text-anchor="middle">Glassmorphism 58</text>
+
+    <rect x="178" y="0" width="144" height="28" rx="14" fill="#090D16" stroke="#EC4899" stroke-width="1.3"/>
+    <text x="250" y="18" font-family="system-ui, -apple-system, sans-serif" font-size="11.5" font-weight="700" fill="#F9A8D4" text-anchor="middle">CustomPainter 70</text>
+  </g>
+  <text x="494" y="512" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#94A3B8">Auto-scales font &amp; pill size with heat-gradient or deterministic palette</text>
+</svg>

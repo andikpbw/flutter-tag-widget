@@ -1,0 +1,38 @@
+name: tag_widget
+description: A modern, customizable Flutter tag & chip widget library featuring interactive tag input, autocomplete, filter tag groups, price-tag shapes, and tag clouds.
+version: 1.0.0
+homepage: https://humanize.id
+repository: https://github.com/andikpbw/flutter-tag-widget
+issue_tracker: https://github.com/andikpbw/flutter-tag-widget/issues
+documentation: https://github.com/andikpbw/flutter-tag-widget#readme
+
+funding:
+  - https://humanize.id
+
+topics:
+  - tag
+  - chip
+  - input
+  - badge
+  - widget
+
+platforms:
+  android:
+  ios:
+  linux:
+  macos:
+  web:
+  windows:
+
+environment:
+  sdk: ^3.5.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
